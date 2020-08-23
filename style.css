@@ -2,6 +2,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+
   }
   
   main {
@@ -5740,12 +5741,26 @@ body {
     margin: 0.5rem 0 1rem 0;
     border-radius: 2px;
     background-color: #fff; }
+
+    .service .card:hover {
+      transform: scale(1.03);
+      background: #fff;
+    }
+    .card:hover i,
+h5 {
+  color: #c2185b;
+}
   
+.card h5 {
+  padding: 10px 0px;
+}
+
   .card {
+    transition: 0.5s;
+    background: #eee;
     position: relative;
     margin: 0.5rem 0 1rem 0;
     background-color: #fff;
-    transition: box-shadow .25s;
     border-radius: 2px; }
     .card .card-title {
       font-size: 24px;
