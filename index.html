@@ -1,372 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-				<title>Code Studio</title>
-				<!--Import Google Icon Font-->
-				<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-					<!-- Compiled and minified CSS -->
-					<link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet" />
-					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-					<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
-					<!-- Google Fonts -->
-					<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
-					<!--Import Google Icon Font-->
-					<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-					<link rel="stylesheet" href="style.css">
-						<link rel="stylesheet" href="index.css">
-						<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-							<style>
-       .brand-logo{
-         width:55px;
-         padding-left:10px;
-       }
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Code Studio</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
+  rel="stylesheet"
+/>
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+      <!--Main Navigation-->
+  <header>
+    <!-- Intro settings -->
+    <style>
+      /* Default height for small devices */
+      #intro {
+        height: 600px;
+        /* Margin to fix overlapping fixed navbar */
+        margin-top: 58px;
+      }
+      @media (max-width: 991px) {
+              #intro {
+              /* Margin to fix overlapping fixed navbar */
+              margin-top: 45px;
+      	}
+      }
     </style>
-						</head>
-						<body>
-							<!-- <header class="navbar-fixed"><nav class="row deep-purple darken-3"><div class="col s12"><ul class="right"><li class="right"><a href="" target="_blank"><img class="logos" src="cs2.png"></a></li><li class="right"><a href="" target="_blank" class="fa fa-github-square fa-2x waves-effect waves-light"><span class="icon-text"></span></a></li></ul></div></nav></header> -->
-							<header>
-								<nav>
-									<div class="nav-wrapper">
-										<a class="brand-logo" href="">
-											<img src="../images/cs2.png">
-											</a>
-											<a href="#" data-target="mobile-demo" class="sidenav-trigger black-text">
-												<i class="material-icons">menu</i>
-											</a>
-											<ul class="right hide-on-med-and-down">
-												<li class="top-level-nav">
-													<a href="pages/learn.html" class="btn btn-compact btn-hollow">Classes</a>
-												</li>
-												<li class="top-level-nav">
-													<a href="pages/courses.html" class="btn btn-compact btn-hollow">Courses</a>
-												</li>
-												<li class="top-level-nav">
-													<a href="pages/career.html" class="btn btn-compact btn-hollow">Career</a>
-												</li>
-												
-											</ul>
-											<ul id="mobile-demo" class="sidenav" style="transform: translateX(-100%);">
-												
-												<li class="divider"></li>
-												<li class="top-level-nav">
-													<a href="pages/learn.html" class="btn btn-compact btn-hollow">Classes</a>
-												</li>
-												<li class="top-level-nav">
-													<a href="pages/courses.html" class="btn btn-compact btn-hollow">Courses</a>
-												</li>
-												<li class="top-level-nav">
-													<a href="pages/career.html" class="btn btn-compact btn-hollow">Career</a>
-												</li>
-												
-											</ul>
-										</div>
-									</nav>
-								</header>
-								<main class="valign-wrapper">
-									<div class="container">
-										<div class="row">
-											<div class="col s12 m6">
-												<span class="container black-text text-lighten-1 ">
-													<p class="flow-text">Welcome to</p>
-													<img alt="logo" src="images/cs1.jpg">
-													</span>
-												</div>
-												<div id="home-what-is-group-email-before-image" class="col s12 m6 home-what-is-group-email-image-container">
-													<p>.</p>
-													<blockquote class="flow-text">Free Personal And Professional Development For Software Engineers</blockquote>
-													<h4  class="title black-text text-lighten-3">BUILD YOUR CAREER</h4>
-													<h4  class="title black-text text-lighten-3">HAVE MORE IMPACT</h4>
-												</div>
-											</div>
-										</div>
-									</main>
-									
-									<div class="container">
-										<div class="container container-flow-text" id="what-is-group-email">
-											<div>
-												<p class="flow-text">
-													<span class="bold">Code Studio </span> is here to get and keep you in shape as a software engineer
-												</p>
-											</div>
-										</div>
 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" target="_blank" href="https://MDBootstrap.com/docs/standard/">
+          <img src="https://MDBootstrap.com/img/logo/MDB-transaprent-noshadows.png" height="16" alt="" loading="lazy"
+            style="margin-top: -3px;" />
+        </a>
+        <button class="navbar-toggler" type="button" data-MDB-toggle="collapse" data-MDB-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="https://www.codestudioug.com/">Home</a>
+            </li>
+   
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.codestudioug.com/" target="_blank">Contact</a>
+            </li>
+          </ul>
 
-										<div class="service">
+          <ul class="navbar-nav d-flex flex-row">
+            <!-- Icons -->
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow"
+                target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://www.facebook.com/MDBootstrap" rel="nofollow" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://twitter.com/MDBootstrap" rel="nofollow" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://github.com/MDBootstrap/MDB-ui-kit" rel="nofollow" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
 
-											<h1 class="black-text center">Our Services</h1>
-										  
-											<div class="row">
-											  <div class="col s12 m6 l4 center-align">
-												<div class="card">
-												  <div class="card-content">
-													<i class="material-icons large">work</i>
-													<h5>Career Services</h5>
-													<ul>
-														<li>Jobs</li>
-														<li>Simulated Interviews</li>
-														<li>Open source projects</li>
-														<li>Sport programming</li>
-														<li>Hackathons</li>
-													</ul>
-													
-												  </div>
-												  <div class="card-action"><a href="pages/career.html">ACCESS FOR FREE</a></div>
-												</div>
-											  </div>
-										  
-											 
-										  
-											  <div class="col s12 m6 l4 center-align">
-												<div class="card">
-												  <div class="card-content">
-													<i class="material-icons large">class</i>
-													<h5>Online Courses</h5>
-													<ul>
-														<a href="https://www.homestudy.codestudioug.com/"><li>Front End Homestudy</li></a> <br>
-														<a href="https://nodejszoom.netlify.app/"><li>Back End Homestudy</li></a>
-														<li>.</li>
-														<li>.</li>
-												  </div>
-												  <div class="card-action"><a href="pages/courses.html">ACCESS FOR FREE</a></div>
-												</div>
-											  </div>
-										  
-											  <div class="col s12 m6 l4 center-align">
-												<div class="card">
-												  <div class="card-content">
-													<i class="material-icons large">live_tv</i>
-													<h5>Live Online Classes</h5>
-													<ul>
-														<a href="https://nodejsclass.netlify.app/"><li>Nodejs Free Online Course</li></a>
-														<li>.</li>
-														<li>.</li>
-														<li>.</li>
-														<li>.</li>
-													</ul>
-												  </div>
-												  <div class="card-action"><a href="pages/learn.html">ACCESS FOR FREE</a></div>
-												</div>
-											  </div>
-											</div>
-										  </div>
+    <!-- Background image -->
+    <div id="intro" class="p-5 text-center bg-image shadow-1-strong"
+      style="background-image: url('./images/BACK.jpg');">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white px-4">
+            <h1 class="mb-3">Code Studio</h1>
 
-										
-										
-									</div>
-				  <!---->
-				  <div class="container">
-                 <div class="spacer"></div>
-									<div class="row">
-                    <h5 class="center" id="home-create-title">
-                      <span class="bold">UPCOMING EVENTS</span>
-                    </h5>
-										<div class="col s12 m6 l4">
-											<div class="card">
-												<div class="card-image waves-effect waves-block waves-light">
-													<img class="activator" src="images/node.jpeg">
-														<div style="display: inline-block; position: absolute; top: -11px; right: -11px; z-index: 10;">
-															<img class="activator" src="images/node.jpg">
-															</div>
-														</div>
-														
-														
-														<div class="card-content">
-															<div class="card-action">
-																<div class="fixed-action-btn">
-																	
-																	
-																</div>
-																<a href="https://bit.ly/NodeAPI" class="waves-effect waves-light btn">REGISTER</a>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="col s12 m6 l4">
-													<div class="card premium z-depth-2">
-														<div class="card-image waves-effect waves-block waves-light">
-															<img class="activator" src="images/node.jpg">
-																<div class="icostar activator"></div>
-															</div>
-															
-															<!--   card reveal content -->
-														
-															<div class="card-content">
-																<div class="card-action">
-																	<div class="fixed-action-btn">
-																		
-																
-																	</div>
-																	<a href="https://bit.ly/NodeAPI" class="waves-effect waves-light btn">REGISTER</a>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="col s12 m6 l4">
-														<div class="card premium z-depth-2">
-															<div class="card-image waves-effect waves-block waves-light">
-																<img class="activator" src="images/node.jpg">
-															
-																</div>
-																<!-- card text content -->
-															
-																<div class="card-content">
-																	<div class="card-action">
-																		<div class="fixed-action-btn">
-																		
-																			
-																		</div>
-																		<a href="https://bit.ly/NodeAPI" class="waves-effect waves-light btn">REGISTER</a>
-																	</div>
-																</div>
-															</div>
-														</div>
-						  </div>
-						  
+      
 
-						  <div class="spacer"></div>
-									<div class="row">
-                    <h5 class="center" id="home-create-title">
-                      <span class="bold">PREVIOUS EVENTS</span>
-                    </h5>
-										<div class="col s12 m6 l4">
-											<div class="card">
-												<div class="card-image waves-effect waves-block waves-light">
-													<img class="activator" src="https://cdn-az.allevents.in/banners/15db3c30-3a1e-11e9-8247-87e13c4dca04-rimg-w1182-h1182-gmir.jpg">
-														<div style="display: inline-block; position: absolute; top: -11px; right: -11px; z-index: 10;">
-															<img class="activator" src="https://cdn-az.allevents.in/banners/15db3c30-3a1e-11e9-8247-87e13c4dca04-rimg-w1182-h1182-gmir.jpg">
-															</div>
-														</div>
-														
-														
-														<div class="card-content">
-															<div class="card-action">
-																<div class="fixed-action-btn">
-																	
-																	
-																</div>
-																<a href="#" class="waves-effect waves-light btn">Read More</a>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="col s12 m6 l4">
-													<div class="card premium z-depth-2">
-														<div class="card-image waves-effect waves-block waves-light">
-															<img class="activator" src="images/node.jpeg">
-																<div class="icostar activator"></div>
-															</div>
-															
-															<!--   card reveal content -->
-														
-															<div class="card-content">
-																<div class="card-action">
-																	<div class="fixed-action-btn">
-																		
-																
-																	</div>
-																	<a href="#" class="waves-effect waves-light btn">Read More</a>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="col s12 m6 l4">
-														<div class="card premium z-depth-2">
-															<div class="card-image waves-effect waves-block waves-light">
-																<img class="activator" src="images/ed.jpg">
-																	
-																</div>
-																<!-- card text content -->
-															
-																<div class="card-content">
-																	<div class="card-action">
-																		<div class="fixed-action-btn">
-																		
-																			
-																		</div>
-																		<a href="#" class="waves-effect waves-light btn">Read More</a>
-																	</div>
-																</div>
-															</div>
-														</div>
-						  </div>
-						  
-                          <div class="row">
-                            <div class="col s12">
-                              <h5 class='text-center'>There is more to being a 
-                                <a href="http://materializecss.com">software engineer</a>
-                              </h5>
-                              <h6 class='text-center grey-text lighten-3'>
-                                <a href="https://twitter.com/tugumeandrew3">@AndrewTugume</a>
-                              </h6>
-                            </div>
-                          </div>
-						</div>				<!---->
-													<footer class="page-footer deep-purple darken-3">
-														<div class="footer-copyright deep-purple darken-4">
-															<div class="container">
-																<time datetime="{{ site.time | date: '%Y' }}">&copy; 2020 CODE STUDIO</time>
-																<a href="https://www.facebook.com/tugume.andrew" class="btn-floating btn-fb mx-1">
-																	<i class="fab fa-facebook-f"></i>
-																</a>
-																<a href="https://www.linkedin.com/in/tugume-andrew-402ba3142/" class="btn-floating btn-fb mx-1">
-																	<i class="fa fa-linkedin" aria-hidden="true"></i>
-																</a>
-																<a href="https://www.instagram.com/tugume_drew/" class="btn-floating btn-fb mx-1">
-																	<i class="fab fa-instagram"></i>
-																</a>
-																<a href="https://twitter.com/TugumeAndrew3" class="btn-floating btn-fb mx-1">
-																	<i class="fab fa-twitter"></i>
-																</a>
-															</div>
-														</div>
-													</footer>
-													<!-- Compiled and minified JavaScript -->
-													<script src="https://code.jquery.com/jquery-3.5.0.slim.min.js" integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
-													<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-													<script>
-    $(document).ready(function(){
-        $('.sidenav').sidenav();
-        $('.carousel.carousel-slider').carousel({fullWidth: true});
-         $('.modal-trigger').leanModal();
-            $('.dropdown-trigger').dropdown();
-              $('.fixed-action-btn').openFAB();
-    $('.fixed-action-btn').closeFAB();
-      });
-    </script>
-													<script>
+            <h4>Software Product Design, Development And  Management </h4>
 
+            <h5> Software Development As A Service For All Kinds of Organisations By African Top Talent</h5>
 
-$(".card").mouseenter(function (e) {
-    if ($(this).find('> .card-reveal').length) {
-        if ($(e.target).is($('.card .activator')) || $(e.target).is($('.card .activator i'))) {
-            // Make Reveal animate up
-            $(this).find('.card-reveal').css({display: 'block'}).velocity("stop", false).velocity({translateY: '-100%'}, {duration: 300, queue: false, easing: 'easeInOutQuad'});
+          
+            <a class="btn btn-outline-light btn-lg m-2" href="https://www.codestudioug.com/" target="_blank"
+              role="button">Contact The Code Studio</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Background image -->
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="mt-5">
+    <div class="container">
+      <!--Section: Content-->
+      <section>
+        <div class="row">
+          <div class="col-md-6 gx-5 mb-4 d-lg-flex align-items-center">
+            <div>
+              <h4><strong>Subscribe to stay up to date </strong></h4>
+              <p class="text-muted">
+             Software Development As A Service For All Kinds of Organisations By African Top Talent
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 gx-5 mb-4">
+            <form>
+              <!-- Name input -->
+              <div class="form-outline mb-4">
+                <input type="text" id="form5Example1" class="form-control" />
+                <label class="form-label" for="form5Example1">Name</label>
+              </div>
+
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="form5Example2" class="form-control" />
+                <label class="form-label" for="form5Example2">Email address</label>
+              </div>
+
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-4">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!--Section: Content-->
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="bg-light text-lg-start">
+   
+
+    <hr class="m-0" />
+
+    <div class="text-center py-4 align-items-center">
+      <p>Follow Code Studio on social media</p>
+      <a href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" class="btn btn-primary m-1" role="button"
+        rel="nofollow" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.facebook.com/MDBootstrap" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://twitter.com/MDBootstrap" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://github.com/MDBootstrap/MDB-ui-kit" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-dark" href="https://codestudioug.com/">codestudioug.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!--Footer-->
+
+    <!-- Time Counter -->
+	<!-- Code Studio -->
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
+></script>
+    <script type="text/javascript">
+      // Set the date we're counting down to
+      var countDownDate = new Date();
+      countDownDate.setDate(countDownDate.getDate() + 30);
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get todays date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById('time-counter').innerHTML =
+          days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's ';
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById('time-counter').innerHTML = 'EXPIRED';
         }
-    }
-
-    $('.card-reveal').closest('.card').css('overflow', 'hidden');
-
-});
-
-$(".card").mouseleave(function () {
-    // Make Reveal animate down and display none
-    $(this).find('.card-reveal').velocity(
-            {translateY: 0},
-            {
-                duration: 225,
-                queue: false,
-                easing: 'easeInOutQuad',
-                complete: function () {
-                    $(this).css({display: 'none'});
-                }
-            });
-});
-       
-														</script>
-														</body>
-													</html>
+      }, 1000);
+    </script>
+   
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
